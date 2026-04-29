@@ -1,0 +1,62 @@
+/* ===== Custom CSS untuk PSAIMS Self Assessment Tool ===== */
+
+/* Scrollbar kustom */
+.sidebar::-webkit-scrollbar       { width: 6px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,.2); border-radius: 3px; }
+
+/* Brand logo */
+.main-sidebar .brand-link {
+    padding: 0.8125rem 0.5rem;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff !important;
+}
+
+/* Card hover effect */
+.small-box {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+.small-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,.2);
+}
+
+/* Judul elemen di kartu kecil */
+.small-box h3 { font-weight: 700; }
+
+/* Nav sidebar - teks menu panjang */
+.nav-sidebar .nav-link p {
+    white-space: normal !important;
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+/* Badge untuk maturity level */
+.btn-group-toggle .btn {
+    padding: 10px; text-align: center;
+    font-size: 0.9rem;
+}
+.btn-group-toggle .btn small { display: block; font-size: 0.7rem; }
+
+/* Alert kustom */
+.alert { border-left: 4px solid; }
+.alert-success { border-left-color: #28a745; }
+.alert-danger  { border-left-color: #dc3545; }
+.alert-warning { border-left-color: #ffc107; }
+.alert-info    { border-left-color: #17a2b8; }
+
+/* Breadcrumb */
+.breadcrumb { background: transparent; padding: 0; }
+
+/* Card-header dengan warna */
+.card-primary.card-outline { border-top: 3px solid #007bff; }
+.card-info.card-outline    { border-top: 3px solid #17a2b8; }
+.card-warning.card-outline { border-top: 3px solid #ffc107; }
+.card-success.card-outline { border-top: 3px solid #28a745; }
+.card-danger.card-outline  { border-top: 3px solid #dc3545; }
+
+/* Print mode */
+@media print {
+    .main-sidebar, .main-header, .main-footer, .no-print { display: none !important; }
+    .content-wrapper { margin-left: 0 !important; }
+}
