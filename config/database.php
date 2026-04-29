@@ -11,7 +11,7 @@ define('DB_HOST', 'localhost');
 define('DB_PORT', '5432');
 define('DB_NAME', 'psaims_db');
 define('DB_USER', 'adminpsaims');
-define('DB_PASS', 'admin1234');   // GANTI dengan password PostgreSQL Anda
+define('DB_PASS', 'password123');   // GANTI dengan password PostgreSQL Anda
 
 /**
  * Koneksi PDO ke PostgreSQL
